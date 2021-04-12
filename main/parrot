@@ -5,6 +5,7 @@ if [ -x /data/data/com.termux/files/usr/libexec/termux/command-not-found ]; then
 fi
 alias la='ls -la'
 alias cls='clear'
+alias quit='exit'
 alias myip='cd $PREFIX/etc && sh .myip.sh'
 c='\033[36;1m' #cyan
 b='\033[34;1m' #blue
