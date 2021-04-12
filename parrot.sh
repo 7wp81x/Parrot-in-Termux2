@@ -41,8 +41,8 @@ printf $c
      echo $g"         Created By Mr.P1r4t3"
      sleep 4
      cd $PREFIX/etc
-     mv motd $HOME/Parrot-in-Termux/main
-     cp $HOME/Parrot-in-Termux/main/parrot $PREFIX/etc
+     mv motd $HOME/Parrot-in-Termux2/main
+     cp $HOME/Parrot-in-Termux2/main/parrot $PREFIX/etc
      cd $PREFIX/etc
      echo $b" ["$g"*"$b"]"$c" Installing Parrot os theme."| pv -qL 20
      mv bash.bashrc bash.bashrc.bak
@@ -52,13 +52,13 @@ printf $c
      sleep 2
      echo $b" ["$g"*"$b"]"$c" Installing Extra arrows and shortcut keys"| pv -qL 20
      sleep 5
-     cd $HOME/Parrot-in-Termux/main/
+     cd $HOME/Parrot-in-Termux2/main/
      cp arrows termux.properties
      cd $HOME/.termux/
      mv termux.properties termux.properties.bak
-     cd $HOME/Parrot-in-Termux/main/
+     cd $HOME/Parrot-in-Termux2/main/
      mv termux.properties $HOME/.termux
-     cp $HOME/Parrot-in-Termux/main/.myip.sh $PREFIX/etc
+     cp $HOME/Parrot-in-Termux2/main/.myip.sh $PREFIX/etc
      echo $b" ["$g"✓"$b"]"$c" Extra arrows and shortcuts Successfully installed."| pv -qL 20
      echo $b" [ List"$g"of"$b"Shortcuts KEYS ]"| pv -qL 20
      echo $g" ✓"$c" Ctrl + t "$g" - Create session."| pv -qL 20
@@ -81,8 +81,8 @@ printf $c
      echo $b"["$r"*"$b"]"$r" Warning!!!."| pv -qL 20
      echo $b"["$g"*"$b"]"$r" Do not leave or exit.."| pv -qL 20
      cd $PREFIX/etc
-     mv $HOME/Parrot-in-Termux/main/motd $PREFIX/etc
-     cp $HOME/Parrot-in-Termux/main/parrot $PREFIX/etc
+     mv $HOME/Parrot-in-Termux2/main/motd $PREFIX/etc
+     cp $HOME/Parrot-in-Termux2/main/parrot $PREFIX/etc
      cd $PREFIX/etc
      echo $b"["$g"*"$b"]"$c" Removing Parrot os theme."| pv -qL 20
      sleep 3
