@@ -39,6 +39,7 @@ echo "
 echo
 printf $g"                   You Are Not Alone."
 echo
+echo
 printf $c"                 ┍━━━━━━━━━━━━━━━━━━━━┑"
 echo
 printf $c"                 │"$g" Welcome "$r" Mr.H4ck3r "$c"│"
