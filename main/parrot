@@ -6,7 +6,7 @@ fi
 alias la='ls -la'
 alias cls='clear'
 alias quit='exit'
-alias myip='cd $PREFIX/etc && sh .myip.sh;cd'
+alias myip='cd $PREFIX/etc && sh .myip.sh'
 c='\033[36;1m' #cyan
 b='\033[34;1m' #blue
 g='\033[32;1m' #g3en
