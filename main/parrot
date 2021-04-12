@@ -1,0 +1,51 @@
+if [ -x /data/data/com.termux/files/usr/libexec/termux/command-not-found ]; then
+	command_not_found_handle() {
+		/data/data/com.termux/files/usr/libexec/termux/command-not-found "$1"
+	}
+fi
+alias la='ls -la'
+alias cls='clear'
+alias myip='cd $PREFIX/etc && sh .myip.sh'
+c='\033[36;1m' #cyan
+b='\033[34;1m' #blue
+g='\033[32;1m' #g3en
+p='\033[35;1m' #purple
+r='\033[31;1m' #red
+w='\033[37;1m' #white
+y='\033[33;1m' #yellow
+o='\033[1;38;5;208m' #Orange
+printf $c
+echo "
+                  .'.
+                xxxxxxodxxl;                      
+               dkxkkxxkkkkkkkx'                   
+              ,k'..cxkkkkkkkkkkl.                 
+              ,     'xkkkkkkkkkkc                 
+                      ckkkkOOOOOOk,
+                       'kOkkkOOOOOOd.             
+                         ;:::dOOOOOOOc            
+    Hack like a Pro.         .OOOOOO00O;          
+    Think like a Kid.         l00000O;d0x.        
+      Make it simple.         .O00000. .,l:       
+        And you will           dOO000c     .      
+          SUCCEED.             .O0O00O            
+                                c00'O0.           
+                - Mr.P1r4t3      O0 .x;           
+                                 c0.  ,           
+                                  k'              
+                                  ,,
+"
+echo
+printf $g"                   You Are Not Alone."
+echo
+printf $c"                 ┍━━━━━━━━━━━━━━━━━━━━┑"
+echo
+printf $c"                 │"$g" Welcome "$r" Mr.H4ck3r "$c"│"
+echo
+printf $c"                 └────────────────────┘"
+echo
+echo
+PS1="\[\033[1;31m\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[\033[1;31m\]\342\234\227\[\033[0;37m\]]\342\224\200\")[$(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;31m\]root\[\033[01;33m\]@\[\033[01;96m\]\h'; else echo '\[\033[1;39m\]\u\[\033[01;33m\]@\[\033[01;96m\]\h'; fi)\[\033[1;31m\]]\342\224\200[\[\033[1;32m\]\w\[\033[1;31m\]]\n\[\033[1;31m\]\342\224\224\342\224\200\342\224\200\342\225\274 \[\033[0m\]\[\e[01;33m\]\\$\[\e[1;32m\]"
+
+#PS1='\$ '
+
