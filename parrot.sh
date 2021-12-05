@@ -13,15 +13,15 @@ w='\033[37;1m' #white
 y='\033[33;1m' #yellow
 o='\033[1;38;5;208m' #Orange
 printf $g
-figlet -f slant " Parrot Os"
-echo $c"    Creator "":"$g" P1r4t3"
-echo $c"    Version "":"$g" v.2"
-echo $c"    Youtube "":"$g" Mr.P1r4t3"
-     echo $c "   _______________________________________________"
-     echo $p "   1."$g "[✓]"$c "Parrot os Theme + Extra keys."
-     echo $p "   2."$g "[✓]"$c "Remove Theme."
-     echo $p "   0."$g "[*]"$c "Exit."
-     echo $c "   ———————————————————————————————————————————————"
+figlet -f slant " ParrotOS"
+echo $c"    Coded by "":"$g" P1r4t3"
+echo $c"    Version  "":"$g" 3.0"
+echo $c"    Youtube  "":"$g" Mr.P1r4t3"
+     echo $c "  ___________________________________________"
+     echo $p "  1."$g "[✓]"$c "Parrot os Theme + Extra keys."
+     echo $p "  2."$g "[✓]"$c "Remove Theme."
+     echo $p "  0."$g "[*]"$c "Exit."
+     echo $c "  ———————————————————————————————————————————"
   while true; do
     printf $g
     read -p "    Select Option: " yn
@@ -38,40 +38,48 @@ echo $c"    Youtube "":"$g" Mr.P1r4t3"
        1) clear
 printf $c
      figlet -f slant " Parrot"
-     echo $g"         Created By Mr.P1r4t3"
-     sleep 4
-     cd $PREFIX/etc
-     mv motd $HOME/Parrot-in-Termux2/main
-     cp $HOME/Parrot-in-Termux2/main/parrot $PREFIX/etc
-     cd $PREFIX/etc
-     echo $b" ["$g"*"$b"]"$c" Installing Parrot os theme."| pv -qL 20
-     mv bash.bashrc bash.bashrc.bak
-     mv parrot bash.bashrc
-     sleep 4
-     echo $b" ["$g"*"$b"]"$c" Parrot os theme Successfully installed.."| pv -qL 20
-     sleep 2
-     echo $b" ["$g"*"$b"]"$c" Installing Extra arrows and shortcut keys"| pv -qL 20
-     sleep 5
-     cd $HOME/Parrot-in-Termux2/main/
-     cp arrows termux.properties
-     cd $HOME/.termux/
-     mv termux.properties termux.properties.bak
-     cd $HOME/Parrot-in-Termux2/main/
-     mv termux.properties $HOME/.termux
-     cp $HOME/Parrot-in-Termux2/main/.myip.sh $PREFIX/etc
-     echo $b" ["$g"✓"$b"]"$c" Extra arrows and shortcuts Successfully installed."| pv -qL 20
-     echo $b" [ List"$g"of"$b"Shortcuts KEYS ]"| pv -qL 20
-     echo $g" ✓"$c" Ctrl + t "$g" - Create session."| pv -qL 20
-     echo $g" ✓"$c" Ctrl + 1 "$g" - Previous session."| pv -qL 20
-     echo $g" ✓"$c" Ctrl + 2 "$g" - Next session."| pv -qL 20
-     echo $g" ✓"$c" Ctrl + n "$g" - Rename session."| pv -qL 20
-     echo $g" ✓"$c" myip     "$g" - Show your ip."| pv -qL 20
-     echo $g" ✓"$c" la       "$g" - just like ls but have more info."| pv -qL 20
-     echo $g" ✓"$c" cls      "$g" - clear screen"| pv -qL 20
-     echo $g" ✓"$c" quit     "$g" - exit"| pv -qL 20
-     sleep 4
-     echo $b" ["$g"✓"$b"]"$g" Just type 'bash' or restart your termux to check theme." | pv -qL 20
-     break;;
+     echo $g"          Coded By Mr.P1r4t3"
+     read -p " [?] Enter Username: " USERNAME
+     cat $HOME/Parrot-in-Termux2/main/parrot1 | sed "s/USERNAME/$USERNAME/g" > $HOME/Parrot-in-Termux2/main/parrot
+     read -p " [?] Are you sure about the username(Y/n)?" userz
+     case $userz in
+     	y)
+	     cd $PREFIX/etc
+	     mv motd $HOME/Parrot-in-Termux2/main
+	     cp $HOME/Parrot-in-Termux2/main/parrot $PREFIX/etc
+	     cd $PREFIX/etc
+	     echo $b" ["$g"*"$b"]"$c" Installing Parrot os theme."| pv -qL 20
+	     mv bash.bashrc bash.bashrc.bak
+	     mv parrot bash.bashrc
+	     sleep 4
+	     echo $b" ["$g"*"$b"]"$c" Parrot os theme Successfully installed.."| pv -qL 20
+	     sleep 2
+	     echo $b" ["$g"*"$b"]"$c" Installing Extra arrows and shortcut keys"| pv -qL 20
+	     sleep 5
+	     cd $HOME/Parrot-in-Termux2/main/
+	     cp arrows termux.properties
+	     cd $HOME/.termux/
+	     mv termux.properties termux.properties.bak
+	     cd $HOME/Parrot-in-Termux2/main/
+	     mv termux.properties $HOME/.termux
+	     cp $HOME/Parrot-in-Termux2/main/.myip.sh $PREFIX/etc
+	     echo $b" ["$g"✓"$b"]"$c" Extra arrows and shortcuts Successfully installed."| pv -qL 20
+	     echo $b" [ List"$g"of"$b"Shortcuts KEYS ]"| pv -qL 20
+	     echo $g" ✓"$c" Ctrl + t "$g" - Create session."| pv -qL 20
+	     echo $g" ✓"$c" Ctrl + 1 "$g" - Previous session."| pv -qL 20
+	     echo $g" ✓"$c" Ctrl + 2 "$g" - Next session."| pv -qL 20
+	     echo $g" ✓"$c" Ctrl + n "$g" - Rename session."| pv -qL 20
+	     echo $g" ✓"$c" myip     "$g" - Show your ip."| pv -qL 20
+	     echo $g" ✓"$c" la       "$g" - just like ls but have more info."| pv -qL 20
+	     echo $g" ✓"$c" cls      "$g" - clear screen"| pv -qL 20
+	     echo $g" ✓"$c" quit     "$g" - exit"| pv -qL 20
+	     sleep 4
+	     echo $b" ["$g"✓"$b"]"$g" Just type 'bash' or restart your termux to check theme." | pv -qL 20
+     	;;
+	*)
+	     exit 1
+        esac
+break;;
 
 2) clear
 printf $c
