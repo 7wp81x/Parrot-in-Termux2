@@ -41,7 +41,7 @@ printf $c
      echo $g"          Coded By Mr.P1r4t3"
      read -p " [?] Enter Username: " USERNAME
      cat $HOME/Parrot-in-Termux2/main/parrot1 | sed "s/USERNAME/$USERNAME/g" > $HOME/Parrot-in-Termux2/main/parrot
-     read -p " [?] Are you sure about the username(Y/n)?" userz
+     read -p " [?] Are you sure about the username(Y/n)?: " userz
      case $userz in
      	y)
 	     cd $PREFIX/etc
